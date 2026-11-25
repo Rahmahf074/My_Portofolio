@@ -1,314 +1,522 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rahma Hidayati Fitrah | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </head>
-  <body>
-  <div class="progress-bar" id="progressBar"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahma Hidayati Fitrah — Full-Stack Web &amp; AI Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">ABOUT ME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skill">SKILLS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#project">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certificate">CERTIFICATES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
+  <!-- Navigasi Atas -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">Rahma<span>.dev</span></a>
+      <nav class="nav-links" aria-label="Navigasi Utama">
+        <a href="#tentang">Tentang</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#sertifikat">Sertifikasi</a>
+        <a href="#kontak" class="btn-nav">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge">Full-Stack Developer • Laravel • React.js • REST API • MySQL</span>
+        <h1>Rahma Hidayati Fitrah</h1>
+        <p class="lead">
+          Mahasiswa S1 Informatika Universitas Bengkulu (Semester 7) yang membangun aplikasi web full-stack, layanan REST API, dan sistem berbasis AI yang berjalan hingga tahap produksi.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyek" class="btn btn-primary">Jelajahi Proyek</a>
+          <a href="https://github.com/Rahmahf074" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+          <a href="https://www.linkedin.com/in/rahma-hidayati-fitrah-a9aa37374/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
         </div>
-    </nav>
+        <div class="hero-metrics">
+          <div class="metric">
+            <strong>10 Besar KP</strong>
+            <span>Informatika UNIB 2026</span>
+          </div>
+          <div class="metric">
+            <strong>Best Graduate</strong>
+            <span>AI Engineer Pijak x IBM</span>
+          </div>
+          <div class="metric">
+            <strong>18 Sertifikat</strong>
+            <span>Dicoding, IBM &amp; DQLab</span>
+          </div>
+        </div>
+      </div>
 
-    <section id="home" class="hero-section">
-        <div class="hero-content fade-in">
-            <p style="color: #00bcd4; font-style: italic; margin-bottom: 1rem;">Hello !!!</p>
-            <h1 style="color: #d9d9d9;">I'm Rahma Hidayati<br>Fitrah</h1>
-            <div class="hero-subtitle">AI ENGINEER &amp; FULL-STACK DEVELOPER</div>
-            <p style="color: #d9d9d9;" class="hero-description">
-                Mahasiswa semester 7 Informatika di Universitas Bengkulu yang membangun sistem AI dan aplikasi web full-stack: chatbot RAG yang berjalan di produksi, deteksi anomali login dengan Isolation Forest, dan sistem rekomendasi kursus. Saat ini saya peserta Asah led by Dicoding dan asisten praktikum Laravel di Universitas Bengkulu.
+      <div class="hero-card">
+        <div class="code-window">
+          <div class="window-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="window-title">profile_programmer.json</span>
+          </div>
+          <pre class="window-body"><code>{
+  "nama": "Rahma Hidayati Fitrah",
+  "lokasi": "Bengkulu, Indonesia",
+  "pendidikan": "S1 Informatika - Universitas Bengkulu",
+  "stack_web": [
+    "Laravel (MVC) & PHP",
+    "React.js & JavaScript",
+    "REST API & MySQL"
+  ],
+  "infrastruktur": [
+    "Git & GitHub",
+    "Docker (Dasar)",
+    "Linux VPS (Ubuntu), Nginx, PM2"
+  ],
+  "peran_terkini": [
+    "Asisten Praktikum PPBKK (Laravel)",
+    "Cohort Next-Gen AI Engineer (Asah)"
+  ]
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang & Pengalaman -->
+  <section id="tentang" class="section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Profil &amp; Pengalaman</span>
+        <h2>Rekam Jejak Pengembangan Sistem &amp; Akademik</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Ringkasan Profil</h3>
+          <p>
+            Saya mahasiswa S1 Informatika di Universitas Bengkulu (angkatan 2023) yang terbiasa merancang dan membangun aplikasi web end-to-end—mulai dari struktur database relasional, pengembangan API/backend, hingga antarmuka pengguna dan deployment server.
+          </p>
+          <p>
+            Pada 2026, saya menyelesaikan Kerja Praktik di PT Bincang Perempuan Digital Media dengan sistem yang aktif di produksi, menjadi lulusan terbaik jalur AI Engineer di program Pijak x IBM SkillsBuild, mengikuti Cohort Next-Gen AI Engineer pada program Asah led by Dicoding x GoTo, serta bertugas sebagai Asisten Praktikum Laravel (PPBKK) untuk kelas B2.
+          </p>
+          <p>
+            Di luar kegiatan teknis, saya aktif di HIMATIF dan menjabat sebagai Staf Ahli Departemen Biro Keuangan di UKM ERCOM FT Universitas Bengkulu.
+          </p>
+        </div>
+
+        <div class="timeline-card">
+          <h3>Pengalaman Utama</h3>
+          <ul class="timeline-list">
+            <li>
+              <span class="time">Agu 2026 – Nov 2026 • Bengkulu</span>
+              <strong>Asisten Praktikum PPBKK (Laravel) — Universitas Bengkulu</strong>
+              <p>Membimbing 19 mahasiswa kelas B2 dalam 8 sesi praktikum aplikasi web full-stack berbasis Laravel, mengevaluasi arsitektur MVC, serta membantu debugging backend dan MySQL.</p>
+            </li>
+            <li>
+              <span class="time">Agu 2026 – Nov 2026 • Indonesia</span>
+              <strong>Cohort Next-Gen AI Engineer — Asah led by Dicoding x GoTo</strong>
+              <p>Berperan dalam proyek tim GyMusFix dengan mengelola repositori Git, standar alur kerja tim, kontrak API, dan skema data (Project Plan memperoleh skor 100).</p>
+            </li>
+            <li>
+              <span class="time">Feb 2026 – Jul 2026 • Indonesia</span>
+              <strong>Cohort AI Engineer (Lulusan Terbaik) — Pijak x IBM SkillsBuild</strong>
+              <p>Memimpin pengembangan frontend dan integrasi sistem rekomendasi pada proyek capstone LearnMatch.</p>
+            </li>
+            <li>
+              <span class="time">Jan 2026 – Apr 2026 • Bengkulu</span>
+              <strong>IT Developer Intern (Kerja Praktik) — PT Bincang Perempuan Digital Media</strong>
+              <p>Membangun dan meluncurkan sistem RAG &amp; dashboard analitik (FastAPI, React.js, MySQL) di VPS Ubuntu dengan Nginx dan PM2; terpilih dalam 10 proyek Kerja Praktik terbaik Informatika UNIB.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keahlian Teknis -->
+  <section id="keahlian" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kompetensi Teknis</span>
+        <h2>Keahlian &amp; Teknologi</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h3>Backend, Web &amp; API</h3>
+          <div class="tag-group">
+            <span class="skill-tag highlight">Laravel (MVC)</span>
+            <span class="skill-tag highlight">PHP</span>
+            <span class="skill-tag highlight">REST API</span>
+            <span class="skill-tag highlight">React.js</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Flask</span>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <h3>Database &amp; Deployment</h3>
+          <div class="tag-group">
+            <span class="skill-tag highlight">MySQL</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag highlight">Git &amp; GitHub</span>
+            <span class="skill-tag highlight">Docker (Dasar)</span>
+            <span class="skill-tag">Linux VPS (Ubuntu)</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">PM2</span>
+            <span class="skill-tag">Postman</span>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <h3>AI, Data &amp; Pemodelan</h3>
+          <div class="tag-group">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Scikit-Learn</span>
+            <span class="skill-tag">RAG Pipeline</span>
+            <span class="skill-tag">Isolation Forest</span>
+            <span class="skill-tag">UML</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyek -->
+  <section id="proyek" class="section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portofolio Proyek</span>
+        <h2>Proyek Aplikasi Web &amp; Sistem</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- 1. Chatbot RAG Bincang Perempuan -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="./asset/chatbot.png" alt="Tampilan chatbot RAG di situs Bincang Perempuan" onerror="this.style.display='none'" />
+            <span class="thumb-badge">Produksi • KP 2026</span>
+          </div>
+          <div class="project-body">
+            <div class="tech-pills">
+              <span>FastAPI</span>
+              <span>React.js</span>
+              <span>MySQL</span>
+              <span>Ubuntu VPS</span>
+            </div>
+            <h3>Chatbot RAG Bincang Perempuan</h3>
+            <p>
+              Chatbot informasi berita yang berjalan aktif di situs bincangperempuan.com dengan alur tiga tahap (aturan, deteksi berita terbaru, dan pencarian TF-IDF + LLM), lengkap dengan dashboard React.js di VPS Ubuntu.
             </p>
-        </div>
-        <div class="hero-image fade-in"></div>
-    </section>
-
-    <section id="biography" class="section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="hero-image2 fade-in" style="width: 100%; height: 400px; margin-bottom: 2rem;"></div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="dots-pattern" style="top: 50px; right: 100px;"></div>
-                    <h2 style="color: #d9d9d9;" class="section-title fade-in">MY BIOGRAPHY</h2>
-                    <p style="color: #d9d9d9;" class="fade-in">
-                        Halo! Saya Rahma Hidayati Fitrah, mahasiswa S1 Informatika di Universitas Bengkulu (angkatan 2023, target lulus 2027). Saya tertarik membangun sistem yang berjalan di dunia nyata, dari backend dan database sampai antarmuka web dan model machine learning.
-                    </p>
-                    <p style="color: #d9d9d9;" class="fade-in">
-                        Pada 2026, saya menjalani Kerja Praktik di Bincang Perempuan dan membangun chatbot RAG yang kini aktif di situs mereka. Saya juga menjadi lulusan terbaik jalur AI Engineer di program Pijak x IBM SkillsBuild, mengikuti Asah led by Dicoding, dan menjadi asisten praktikum PPBKK yang membimbing 19 mahasiswa membangun aplikasi Laravel. Di kampus, saya aktif di HIMATIF dan ERCOM.
-                    </p>
-                </div>
+            <div class="project-links">
+              <a href="https://bincangperempuan.com/" target="_blank" rel="noopener noreferrer">Situs Live &rarr;</a>
             </div>
-        </div>
-    </section>
+          </div>
+        </article>
 
-
-    <section id="skill" class="section">
-        <div class="container">
-            <h2 class="section-title" style="color: #d9d9d9;">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #3776ab;"><i class="fab fa-python"></i></div>
-                    <div class="skill-name">Python</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #ffffff;"><i class="fas fa-flask"></i></div>
-                    <div class="skill-name">Flask</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #009688;"><i class="fas fa-bolt"></i></div>
-                    <div class="skill-name">FastAPI</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #ff2d20;"><i class="fab fa-laravel"></i></div>
-                    <div class="skill-name">Laravel</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #777bb4;"><i class="fab fa-php"></i></div>
-                    <div class="skill-name">PHP</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #61dafb;"><i class="fab fa-react"></i></div>
-                    <div class="skill-name">React</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #f0db4f;"><i class="fab fa-js-square"></i></div>
-                    <div class="skill-name">JavaScript</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #e44d26;"><i class="fab fa-html5"></i></div>
-                    <div class="skill-name">HTML</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #264de4;"><i class="fab fa-css3-alt"></i></div>
-                    <div class="skill-name">CSS</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #f29111;"><i class="fas fa-database"></i></div>
-                    <div class="skill-name">MySQL</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #f5a623;"><i class="fas fa-brain"></i></div>
-                    <div class="skill-name">Machine Learning</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #6c63ff;"><i class="fas fa-robot"></i></div>
-                    <div class="skill-name">RAG &amp; LLM API</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #2496ed;"><i class="fab fa-docker"></i></div>
-                    <div class="skill-name">Docker</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #f05032;"><i class="fab fa-git-alt"></i></div>
-                    <div class="skill-name">Git &amp; GitHub</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon" style="color: #17a2b8;"><i class="fas fa-project-diagram"></i></div>
-                    <div class="skill-name">UML</div>
-                </div>
+        <!-- 2. LearnMatch -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="./asset/learnmatch.png" alt="Tampilan aplikasi rekomendasi kursus LearnMatch" onerror="this.style.display='none'" />
+            <span class="thumb-badge">Capstone • 2026</span>
+          </div>
+          <div class="project-body">
+            <div class="tech-pills">
+              <span>Flask</span>
+              <span>React (Vite)</span>
+              <span>MySQL</span>
+              <span>Postman</span>
             </div>
-        </div>
-    </section>
-
-    <section id="project" class="section">
-        <div class="container">
-            <div class="dots-pattern" style="top: 100px; right: 50px;"></div>
-            <h2 class="section-title fade-in" style="color: #d9d9d9;">PROJECTS</h2>
-            <div class="project-grid" style="color: #d9d9d9;">
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="./asset/chatbot.png" alt="Tampilan chatbot RAG di situs Bincang Perempuan" class="project-img" />
-                    </div>
-                    <div class="project-content">
-                        <h4>Chatbot RAG Bincang Perempuan | Kerja Praktik 2026</h4>
-                        <p>Chatbot informasi berita yang aktif di situs bincangperempuan.com. Alurnya tiga tahap: jawaban berbasis aturan, deteksi berita terbaru, dan pencarian TF-IDF yang dilanjutkan jawaban dari LLM. Dibangun dengan FastAPI, MySQL, dan React, serta di-deploy di VPS Ubuntu.</p>
-                        <a href="https://bincangperempuan.com/" class="project-link" target="_blank" rel="noopener">🔗 Lihat situs (widget chat di pojok bawah)</a>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="./asset/login-anomaly.png" alt="Tampilan sistem deteksi anomali login mahasiswa" class="project-img" />
-                    </div>
-                    <div class="project-content">
-                        <h4>Student Login Anomaly Detection | Proyek PPL</h4>
-                        <p>Sistem yang menilai setiap percobaan login dengan Isolation Forest, lalu menunda atau memblokir login berisiko secara real time. Terhubung ke alur autentikasi yang berjalan dengan Flask, MySQL, dan React.</p>
-                        <a href="https://github.com/Rahmahf074/deteksi-anomali-login-mahasiswa" class="project-link" target="_blank" rel="noopener">🔗 Lihat di GitHub</a>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="./asset/learnmatch.png" alt="Tampilan aplikasi LearnMatch" class="project-img" />
-                    </div>
-                    <div class="project-content">
-                        <h4>LearnMatch | IBM SkillsBuild x Pijak 2026</h4>
-                        <p>Sistem rekomendasi kursus dari 482 kursus Coursera dengan tiga metode: content-based, collaborative filtering, dan demographic filtering, lengkap dengan penjelasan skor kecocokan. Proyek tim; saya memimpin bagian ML dan frontend. Dibangun dengan Python, Flask, React, dan MySQL.</p>
-                        <a href="https://github.com/SatriaDwiCahyaa/LearnMatch-AI-Powered-Course-Recommendation-System-for-Upskilling" class="project-link" target="_blank" rel="noopener">🔗 Lihat di GitHub</a>
-                        <a href="https://learnmatch-web.vercel.app/" class="project-link" target="_blank" rel="noopener">🔗 Live demo</a>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="./asset/padang.png" alt="Tampilan website Rumah Makan Padang" class="project-img" />
-                    </div>
-                    <div class="project-content">
-                        <h4>Website Rumah Makan Padang | 2025</h4>
-                        <p>Website yang dibuat dengan React.js sebagai tugas akhir mata kuliah Pemrograman Web. Dikerjakan secara tim, dan saya menjadi ketua tim.</p>
-                        <a href="https://github.com/Rahmahf074/proyek_rm_padang" class="project-link" target="_blank" rel="noopener">🔗 Lihat di GitHub</a>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="./asset/toko.png" alt="Tampilan website toko sepatu" class="project-img" />
-                    </div>
-                    <div class="project-content">
-                        <h4>Website Toko Sepatu | 2025</h4>
-                        <p>Website toko sepatu berbasis PHP, dibuat sebagai tugas akhir mata kuliah Proyek Basis Data Lanjut. Dikerjakan secara tim, dan saya menjadi ketua tim.</p>
-                        <a href="https://github.com/Rahmahf074/Tubes_Basda_lanjut_Kelompok-5" class="project-link" target="_blank" rel="noopener">🔗 Lihat di GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <p class="fade-in" style="color: #d9d9d9; margin-top: 2rem;">
-                Proyek kuliah lainnya ada di <a href="https://github.com/Rahmahf074" target="_blank" rel="noopener" style="color: #00bcd4;">GitHub saya</a>.
+            <h3>LearnMatch: Sistem Rekomendasi Kursus</h3>
+            <p>
+              Sistem rekomendasi dari 482 kursus menggunakan content-based, collaborative filtering, dan demographic filtering dengan 13+ endpoint API terdokumentasi dan koleksi Postman (21 request).
             </p>
-        </div>
-    </section>
-
-    <section id="certificate" class="section">
-        <div class="container" style="color: #d9d9d9;">
-            <h2 class="section-title">CERTIFICATES</h2>
-            <div class="certificates-grid">
-                <div class="certificate-card">
-                    <h3 class="certificate-title">Spec-Driven Development dengan Kiro</h3>
-                    <div class="certificate-issuer">Dicoding Indonesia, Agustus 2026</div>
-                    <a href="https://www.dicoding.com/certificates/QLZ9NK7RMZ5D" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <h3 class="certificate-title">Build an AI Agent</h3>
-                    <div class="certificate-issuer">IBM, Juli 2026</div>
-                    <a href="https://www.credly.com/badges/a16c1acc-00de-4ef2-9302-7d604fdf466d/linked_in_profile" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <h3 class="certificate-title">Membangun Sistem Machine Learning</h3>
-                    <div class="certificate-issuer">Dicoding Indonesia, Juni 2026</div>
-                    <a href="https://www.dicoding.com/certificates/L4PQ9L907PO1" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <h3 class="certificate-title">Belajar Fundamental Deep Learning</h3>
-                    <div class="certificate-issuer">Dicoding Indonesia, Mei 2026</div>
-                    <a href="https://www.dicoding.com/certificates/GRX5WW41VZ0M" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <h3 class="certificate-title">Belajar Machine Learning untuk Pemula</h3>
-                    <div class="certificate-issuer">Dicoding Indonesia, Maret 2026</div>
-                    <a href="https://www.dicoding.com/certificates/JMZVO9Q73XN9" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <h3 class="certificate-title">Belajar Dasar Cloud dan Gen AI di AWS</h3>
-                    <div class="certificate-issuer">Dicoding Indonesia, Agustus 2026</div>
-                    <a href="https://www.dicoding.com/certificates/1OP876LEVZQK" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <h3 class="certificate-title">Belajar Fundamental Pemrosesan Data</h3>
-                    <div class="certificate-issuer">Dicoding Indonesia, September 2026</div>
-                    <a href="https://www.dicoding.com/certificates/07Z6QGQVRZQR" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <h3 class="certificate-title">Belajar Analisis Data untuk Pemula</h3>
-                    <div class="certificate-issuer">Dicoding Indonesia, September 2026</div>
-                    <a href="https://www.dicoding.com/certificates/N9ZO0405YXG5" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <h3 class="certificate-title">Belajar Fundamental Front-End Web Development</h3>
-                    <div class="certificate-issuer">Dicoding Indonesia, September 2025</div>
-                    <a href="https://www.dicoding.com/certificates/1RXYQOJQKZVM" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <h3 class="certificate-title">Belajar Membuat Front-End Web untuk Pemula</h3>
-                    <div class="certificate-issuer">Dicoding Indonesia, Juni 2025</div>
-                    <a href="https://www.dicoding.com/certificates/53XEKLLNKXRN" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <h3 class="certificate-title">Study Case Bootcamp Machine Learning &amp; AI for Beginner</h3>
-                    <div class="certificate-issuer">Mini Bootcamp DQlab</div>
-                    <a href="https://drive.google.com/file/d/1J_Bph2aRhgdZyBBnSfSIsL0gK00vSwrj/view?usp=sharing" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
-                </div>
-                <div class="certificate-card">
-                    <h3 class="certificate-title">Study Case Bootcamp Data Analyst with SQL &amp; Python</h3>
-                    <div class="certificate-issuer">Mini Bootcamp DQlab</div>
-                    <a href="https://drive.google.com/file/d/1UP8f_P0paG2AfXtzV8ck5rGrn459knBb/view?usp=sharing" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
-                </div>
+            <div class="project-links">
+              <a href="https://learnmatch-web.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+              <a href="https://github.com/SatriaDwiCahyaa/LearnMatch-AI-Powered-Course-Recommendation-System-for-Upskilling" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
             </div>
-        </div>
-    </section>
+          </div>
+        </article>
 
-
-    <section id="contact" class="section">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title fade-in" style="text-align: center; font-size: 4rem; margin-bottom: 1rem; color: #d9d9d9;">GET IN TOUCH</h2>
-                <p class="fade-in" style="color: #00bcd4; font-style: italic; margin-bottom: 3rem;">Let's Work Together</p>
+        <!-- 3. Student Login Anomaly Detection -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="./asset/login-anomaly.png" alt="Tampilan sistem deteksi anomali login mahasiswa" onerror="this.style.display='none'" />
+            <span class="thumb-badge">Proyek PPL</span>
+          </div>
+          <div class="project-body">
+            <div class="tech-pills">
+              <span>Flask</span>
+              <span>React</span>
+              <span>MySQL</span>
+              <span>Scikit-Learn</span>
             </div>
-
-            <div class="contact-grid" style="color: #d9d9d9;">
-                <div class="contact-item fade-in">
-                    <i class="fas fa-phone contact-icon"></i>
-                    <h4>WhatsApp</h4>
-                    <p><a href="https://wa.me/6282269273785" target="_blank" rel="noopener">+62 822 6927 3785</a></p>
-                </div>
-
-                <div class="contact-item fade-in">
-                    <i class="fas fa-envelope contact-icon"></i>
-                    <h4>Email</h4>
-                    <p><a href="mailto:rahmahidayatif@gmail.com">rahmahidayatif@gmail.com</a></p>
-                </div>
-
-                <div class="contact-item fade-in">
-                    <i class="fas fa-map-marker-alt contact-icon"></i>
-                    <h4>Location</h4>
-                    <p>Seluma, Bengkulu, Indonesia</p>
-                </div>
-
-                <div class="contact-item fade-in">
-                    <i class="fas fa-heart contact-icon"></i>
-                    <h4>Social Media</h4>
-                    <p><a href="https://www.linkedin.com/in/rahmahidayati-fitrah-a9aa37374" target="_blank" rel="noopener">LinkedIn</a></p>
-                    <p><a href="https://github.com/Rahmahf074" target="_blank" rel="noopener">GitHub</a></p>
-                </div>
+            <h3>Student Login Anomaly Detection</h3>
+            <p>
+              Menilai percobaan login menggunakan Isolation Forest untuk menunda atau memblokir akses berisiko secara real-time, terintegrasi dengan backend Flask, MySQL, dan antarmuka React.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Rahmahf074/deteksi-anomali-login-mahasiswa" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
             </div>
+          </div>
+        </article>
+
+        <!-- 4. Rivaro Shoes -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="./asset/toko.png" alt="Tampilan website toko sepatu Rivaro Shoes" onerror="this.style.display='none'" />
+            <span class="thumb-badge">Tim • Ketua Tim</span>
+          </div>
+          <div class="project-body">
+            <div class="tech-pills">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Web Apps</span>
+            </div>
+            <h3>Rivaro Shoes — Toko Sepatu Online</h3>
+            <p>
+              Aplikasi toko sepatu berbasis PHP dan MySQL dengan fitur keranjang belanja, checkout, riwayat pesanan, live chat admin, serta dashboard pengelolaan data admin.
+            </p>
+            <div class="project-links">
+              <a href="https://rivaro-shoes.freehosting.dev/sepatu_online/index.php" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+              <a href="https://github.com/Rahmahf074/toko-sepatu-online-php" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Rumah Makan Padang -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="./asset/padang.png" alt="Tampilan website Rumah Makan Padang" onerror="this.style.display='none'" />
+            <span class="thumb-badge">Tim • Ketua Tim</span>
+          </div>
+          <div class="project-body">
+            <div class="tech-pills">
+              <span>React.js</span>
+              <span>Frontend</span>
+              <span>UI/UX</span>
+            </div>
+            <h3>Website Rumah Makan Padang</h3>
+            <p>
+              Website responsif berbasis React.js yang menampilkan kartu menu, galeri, testimoni pelanggan, dan formulir kontak sebagai tugas akhir mata kuliah Pemrograman Web.
+            </p>
+            <div class="project-links">
+              <a href="https://rahmahf074.github.io/rumah-makan-padang-react/" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+              <a href="https://github.com/Rahmahf074/rumah-makan-padang-react" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Profil Kota Bengkulu -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <span class="thumb-badge">Web Statis • 2025</span>
+          </div>
+          <div class="project-body">
+            <div class="tech-pills">
+              <span>HTML5</span>
+              <span>CSS3</span>
+            </div>
+            <h3>Profil Kota Bengkulu</h3>
+            <p>
+              Website profil daerah informatif yang menyajikan sejarah, kondisi geografis, destinasi wisata populer, dan kuliner khas Kota Bengkulu menggunakan HTML5 dan CSS3.
+            </p>
+            <div class="project-links">
+              <a href="https://rahmahf074.github.io/Website_Bengkulu_R_2025/" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+              <a href="https://github.com/Rahmahf074/Website_Bengkulu_R_2025" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="more-projects">
+        <p>Repositori dan eksperimen lainnya tersedia di <a href="https://github.com/Rahmahf074" target="_blank" rel="noopener noreferrer">github.com/Rahmahf074</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sertifikasi (18 Sertifikat Lengkap) -->
+  <section id="sertifikat" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Sertifikasi &amp; Pelatihan (18 Kredensial)</span>
+        <h2>Sertifikat Kompetensi Terverifikasi</h2>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-item">
+          <div>
+            <h4>Belajar Fundamental Pemrosesan Data</h4>
+            <p>Dicoding Indonesia • Sep 2026 • ID: 07Z6QGQVRZQR</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/07Z6QGQVRZQR" target="_blank" rel="noopener noreferrer">Lihat</a>
         </div>
-    </section>
 
-    <div class="portfolio-year">PORTFOLIO 2026</div>
+        <div class="cert-item">
+          <div>
+            <h4>Belajar Analisis Data untuk Pemula</h4>
+            <p>Dicoding Indonesia • Sep 2026 • ID: N9ZO0405YXG5</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/N9ZO0405YXG5" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
 
-  </body>
+        <div class="cert-item">
+          <div>
+            <h4>Spec-Driven Development dengan Kiro</h4>
+            <p>Dicoding Indonesia • Agu 2026 • ID: QLZ9NK7RMZ5D</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/QLZ9NK7RMZ5D" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Belajar Dasar Cloud dan Gen AI di AWS</h4>
+            <p>Dicoding Indonesia • Agu 2026 • ID: 1OP876LEVZQK</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/1OP876LEVZQK" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Build an AI Agent</h4>
+            <p>IBM • Jul 2026</p>
+          </div>
+          <a href="https://www.credly.com/badges/a16c1acc-00de-4ef2-9302-7d604fdf466d/linked_in_profile" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Membangun Sistem Machine Learning</h4>
+            <p>Dicoding Indonesia • Jun 2026 • ID: L4PQ9L907PO1</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/L4PQ9L907PO1" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Belajar Fundamental Deep Learning</h4>
+            <p>Dicoding Indonesia • Mei 2026 • ID: GRX5WW41VZ0M</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/GRX5WW41VZ0M" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Belajar Machine Learning untuk Pemula</h4>
+            <p>Dicoding Indonesia • Mar 2026 • ID: JMZVO9Q73XN9</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/JMZVO9Q73XN9" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Memulai Pemrograman dengan Python</h4>
+            <p>Dicoding Indonesia • Feb 2026 • ID: KEXLQ4V2WPG2</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/KEXLQ4V2WPG2" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Belajar Dasar AI</h4>
+            <p>Dicoding Indonesia • Feb 2026 • ID: 1OP8JG6KVPQK</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/1OP8JG6KVPQK" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Pengenalan ke Logika Pemrograman (Programming Logic 101)</h4>
+            <p>Dicoding Indonesia • Jan 2026 • ID: ERZR232G2PYV</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/ERZR232G2PYV" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h4>
+            <p>Dicoding Indonesia • Jan 2026 • ID: EYX4KW2M5PDL</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/EYX4KW2M5PDL" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Belajar Fundamental Front-End Web Development</h4>
+            <p>Dicoding Indonesia • Sep 2025 • ID: 1RXYQOJQKZVM</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/1RXYQOJQKZVM" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Belajar Membuat Front-End Web untuk Pemula</h4>
+            <p>Dicoding Indonesia • Jun 2025 • ID: 53XEKLLNKXRN</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/53XEKLLNKXRN" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Belajar Dasar Pemrograman JavaScript</h4>
+            <p>Dicoding Indonesia • Jun 2025 • ID: 1OP82GY3VPQK</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/1OP82GY3VPQK" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Belajar Dasar Pemrograman Web</h4>
+            <p>Dicoding Indonesia • Apr 2025 • ID: ERZREJOYMXYV</p>
+          </div>
+          <a href="https://www.dicoding.com/certificates/ERZREJOYMXYV" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Study Case Bootcamp Machine Learning &amp; AI for Beginner</h4>
+            <p>Mini Bootcamp DQLab</p>
+          </div>
+          <a href="https://drive.google.com/file/d/1J_Bph2aRhgdZyBBnSfSIsL0gK00vSwrj/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+
+        <div class="cert-item">
+          <div>
+            <h4>Study Case Bootcamp Data Analyst with SQL &amp; Python</h4>
+            <p>Mini Bootcamp DQLab</p>
+          </div>
+          <a href="https://drive.google.com/file/d/1UP8f_P0paG2AfXtzV8ck5rGrn459knBb/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lihat</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <footer id="kontak" class="footer">
+    <div class="container footer-inner">
+      <div>
+        <h2>Hubungi Saya</h2>
+        <p>Terbuka untuk kesempatan Programmer Junior, pengembangan web full-stack, dan kolaborasi proyek.</p>
+      </div>
+      <div class="contact-links">
+        <a href="tel:+6282269273785" class="contact-pill">Telepon / WA: 0822-6927-3785</a>
+        <a href="mailto:rahmahidayatif@gmail.com" class="contact-pill">rahmahidayatif@gmail.com</a>
+        <a href="https://www.linkedin.com/in/rahma-hidayati-fitrah-a9aa37374/" target="_blank" rel="noopener noreferrer" class="contact-pill">LinkedIn</a>
+        <a href="https://github.com/Rahmahf074" target="_blank" rel="noopener noreferrer" class="contact-pill">GitHub</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Rahma Hidayati Fitrah • Bengkulu, Indonesia</p>
+    </div>
+  </footer>
+
+</body>
 </html>
